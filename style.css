@@ -10,3 +10,49 @@ h1 {
   text-align: center;
   font-size: 72px;
 }
+.image-box img {
+  width: 10%;
+}
+.baseball-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button.start-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.start-btn i {
+  transition: all 0.3s ease-in-out;
+}
+.start-btn i:hover {
+  transform: scale(1.1);
+}
+.start-btn span {
+  display: block;
+  font-size: 25px;
+  font-family: "Pacifico", cursive;
+}
+.showing {
+  display: block;
+}
+.hide {
+  display: none;
+}
+form {
+  display: none;
+  margin: 20px 0;
+}
+form input[type="text"] {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: none;
+  outline: none;
+}
+form input::placeholder {
+  text-align: center;
+}
