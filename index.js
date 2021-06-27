@@ -2,7 +2,8 @@
 const startBtn = document.querySelector(".start-btn"),
     jsForm = document.querySelector(".js-form"),
     jsInput = jsForm.querySelector(".js-input"),
-    jsLogs = document.querySelector(".logs");
+    jsLogs = document.querySelector(".logs"),
+    reBtn = document.querySelector(".replay");
 
 const numbers = [];
 for (let n = 0; n < 10; n += 1) {
@@ -44,8 +45,9 @@ function submitClick(event){
          //join() = 문자열로 반환
        }
     if(tries.length >= 9){
-           jsLogs.appendChild(document.createTextNode(`10번의 기회가 끝났습니다!`));
-          return;
+           //jsLogs.appendChild(document.createTextNode(`10번의 기회가 끝났습니다!`));
+           jsLogs.append(`10번의 기회가 끝났습니다!`, document.createElement("br"));
+           return;
          //append 계속 추가
      }
     
@@ -72,5 +74,8 @@ function init() {
     console.log(answer);
     startBtn.addEventListener("click", startGame);
     jsForm.addEventListener('submit', submitClick);
+    reBtn.addEventListener("click", function(){
+        location.reload();
+    });
 }
 init();

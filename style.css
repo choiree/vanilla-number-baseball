@@ -9,6 +9,7 @@ h1 {
   font-family: "Pacifico", cursive;
   text-align: center;
   font-size: 72px;
+  margin-bottom: 20px;
 }
 .image-box img {
   width: 10%;
@@ -55,4 +56,19 @@ form input[type="text"] {
 }
 form input::placeholder {
   text-align: center;
+}
+form input[type="submit"] {
+  cursor: pointer;
+  background: black;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+.replay {
+  cursor: pointer;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
 }
